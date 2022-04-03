@@ -5,13 +5,13 @@ using System.Text;
 
 namespace BuiltZoo
 {
-    public class Kangaroo : Mammals
+    public class Kangaroo : Mammals, Iprey
     {
         //override Properties from parent classes
 
         public override string Name { get; set; } = "Kangaroo";
         public override decimal Age { get; set; } = 2;
-        public override decimal Weight { get; set; } =30;
+        public override decimal Weight { get; set; } = 30;
         public override int NumOfLegs { get; set; } = 2;
         // override Sleep method
         public override string Sleep()

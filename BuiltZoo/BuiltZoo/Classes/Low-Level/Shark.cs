@@ -5,7 +5,7 @@ using System.Text;
 
 namespace BuiltZoo
 {
-    public class Shark : Fish
+    public class Shark : Fish, Ipredator
     {
         //overide Properties from parent classes
         //Default values
@@ -13,6 +13,12 @@ namespace BuiltZoo
         public override decimal Age { get; set; } = 25;
         public override decimal Weight { get; set; } = 300;
         public override decimal SwimSpeed { get; set; } = 500;
+        //implement interface function
+
+        public string Hunt()
+        {
+            return "The shark searching for a food";
+        }
         // override Sleep method
         public override string Sleep()
         {
@@ -37,9 +43,9 @@ namespace BuiltZoo
         /// <returns>
         /// string: a representation of the concrete Shark object's Predators.
         /// </returns>
-        public  string Predators()
+        public string Predators()
         {
-           return"Shark Class Say : Sharks are Predators";
+            return "Shark Class Say : Sharks are Predators";
 
         }
 

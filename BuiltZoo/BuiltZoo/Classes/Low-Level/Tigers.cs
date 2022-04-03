@@ -6,6 +6,7 @@ using System.Text;
 namespace BuiltZoo
 {
     public class Tiger : Mammals // tiger class is a child class inherited from mammals and mammals from animals
+, Ipredator
     {
         //override Properties from parent classes
 
