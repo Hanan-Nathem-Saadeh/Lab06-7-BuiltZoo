@@ -5,8 +5,27 @@ using System.Text;
 
 namespace BuiltZoo
 {
-    public abstract class Mammals : Animals //Derived Class From Animals Class and it is parent for Tiger and Kangaroo classes
+    public  class Mammals : Animals //Derived Class From Animals Class and it is parent for Tiger and Kangaroo classes
+, Iprey, Ipredator
     {
+        public string Hunt()
+        {
+            return "It is searching for a food";
+        }
+        public string Flee()
+        {
+
+            return "It is runs away !! ";
+        }
+        public override string Name { get; set; }
+
+        public override decimal Age { get; set; }
+        public override decimal Weight { get; set; }
+        public override string Sound()
+        {
+            return "Mammals has sound";
+        }
+
         // virtual propertity
         public virtual int NumOfLegs { get; set; } = 2;
         //override sleep method
@@ -17,7 +36,7 @@ namespace BuiltZoo
         //override eat method
         public override void Eat()
         {
-           Console.WriteLine("Mammals Class Say : All Mammals Eating");
+            Console.WriteLine("Mammals Class Say : All Mammals Eating");
         }
 
         /// <summary>
@@ -26,7 +45,10 @@ namespace BuiltZoo
         /// <returns>
         /// string: a representation of the concrete Mammal object's BreastFeeding
         /// </returns>
-        public abstract void BreastFeeding();
-        
+        public virtual void BreastFeeding()
+        {
+
+        }
+
     }
 }

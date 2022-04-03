@@ -5,11 +5,18 @@ using System.Text;
 
 namespace BuiltZoo
 {
-    public class Parrot : Birds
+    public class Parrot : Birds, Iprey
     {
+
+        // implement interface function
+        public string Flee()
+        {
+
+            return "The Parrot runs away !! ";
+        }
         //override Properties from parent classes
 
-      //Default Values
+        //Default Values
         public override string Name { get; set; } = "Parrot";
         public override decimal Age { get; set; } = 1;
         public override decimal Weight { get; set; } = 2;
@@ -42,7 +49,7 @@ namespace BuiltZoo
         }
         public string ImitateSpeech()
         {
-          return "Parrot Class Say : Parrots ImitateSpeech";
+            return "Parrot Class Say : Parrots ImitateSpeech";
         }
     }
 }

@@ -5,13 +5,14 @@ using BuiltZoo;
 namespace TestZoo
 {
     public class UnitTest1
-        
+
     {
         Tiger tiger1 = new Tiger();
         Kangaroo Kangaroo1 = new Kangaroo();
         Shark Shark1 = new Shark();
         ClownFish ClownFish1 = new ClownFish();
         Parrot Parrot1 = new Parrot();
+        Mammals mammal1 = new Mammals();
 
         [Fact]
         public void TestNumOfLegsTiger()
@@ -22,6 +23,12 @@ namespace TestZoo
         public void TestTigerName()
         {
             Assert.Equal("Tiger", tiger1.Name);
+        }
+        [Fact]
+        public void TestKangarooLegFromMammals()
+        {
+            Assert.Equal(2, mammal1.NumOfLegs);
+
         }
         [Fact]
         public void TestTigerSleep()
@@ -69,11 +76,11 @@ namespace TestZoo
             Assert.Equal("Shark Class Say : Sharks are Predators", Shark1.Predators());
         }
 
-     [Fact]
-     public void TestClownFishColor()
+        [Fact]
+        public void TestClownFishColor()
         {
 
-            Assert.Equal("Orange and white" , ClownFish1.Color);
+            Assert.Equal("Orange and white", ClownFish1.Color);
         }
         [Fact]
         public void TestClownFishNumberOfFins()
@@ -92,6 +99,67 @@ namespace TestZoo
         {
 
             Assert.Equal("Parrot", Parrot1.Name);
+        }
+        //Test For interfaces
+        [Fact]
+        public void TestImplementIpreyInterfaceClownFish()
+        {
+            Assert.Equal("The ClownFish runs away !! ", ClownFish1.Flee());
+        }
+        [Fact]
+        public void TestImplementIpreyInterfaceKangaroo()
+        {
+            Assert.Equal("It is runs away !! ", Kangaroo1.Flee());
+        }
+        [Fact]
+        public void TestImplementIpreyInterfaceParrot()
+        {
+            Assert.Equal("The Parrot runs away !! ", Parrot1.Flee());
+        }
+        [Fact]
+        public void TestImplementIpredatorInterfaceShark()
+        {
+            Assert.Equal("The shark searching for a food", Shark1.Hunt());
+        }
+        [Fact]
+        public void TestImplementIpredatorInterfaceTiger()
+        {
+            Assert.Equal("It is searching for a food", tiger1.Hunt());
+        }
+        [Fact]
+        public void TestPolymorphism()
+        {
+
+            Mammals Tiger = new Tiger();
+            Assert.Equal("Tiger Class Say : All Tigers Sleepping", Tiger.Sleep());
+        }
+        [Fact]
+        public void TestPolymorphism2()
+        {
+
+            Birds ParrotSweet = new Parrot();
+
+            Assert.Equal(1, ParrotSweet.Age);
+        }
+        [Fact]
+        public void TestInheretance()
+        {
+            // Test inheritance.
+            Mammals mammal1 = new Mammals();
+            Assert.Equal("Mammals Class Say : All Mammals Sleepping", mammal1.Sleep());
+            Assert.Equal(2, mammal1.NumOfLegs);
+        }
+        [Fact]
+        public void IsAnimal()
+        {
+            //test if tiger is animal
+            Assert.True(tiger1 is Animals);
+        }
+        [Fact]
+        public void ParrotIsAnimal()
+        {
+            //test if parrot  is animal
+            Assert.True(Parrot1 is Animals);
         }
 
     }

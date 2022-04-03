@@ -5,13 +5,18 @@ using System.Text;
 
 namespace BuiltZoo
 {
-    public class ClownFish : Fish
+    public class ClownFish : Fish, Iprey
     {
         public override string Name { get; set; } = "ClownFish";
         public override decimal Age { get; set; } = 2;
         public override decimal Weight { get; set; } = 6;
-        public override decimal SwimSpeed { get; set; } =100;
+        public override decimal SwimSpeed { get; set; } = 100;
+         // implement interface function
+         public string Flee()
+        {
 
+            return "The ClownFish runs away !! ";
+        }
         public string Color
         {
             get { return Color = "Orange and white"; }
