@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="Parent,abstract">
+    <Position X="3.448" Y="0.635" Height="0.323" Width="1.21" />
+  </Comment>
+  <Comment CommentText="derived classes and parent fot another">
+    <Position X="0.948" Y="3.594" Height="0.635" Width="1.971" />
+  </Comment>
+  <Comment CommentText="childs classes">
+    <Position X="0.5" Y="6.156" Height="0.365" Width="1.096" />
+  </Comment>
+  <Class Name="BuiltZoo.Mammals">
+    <Position X="3" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEQAAAAAAAAAAAAAAYAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Medium-Level\Mammals.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BuiltZoo.Animals">
+    <Position X="4.75" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEQAAAAAAAEAAAAQAACAAAAAABAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Top-Level\Animals.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BuiltZoo.Fish">
+    <Position X="5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAEQAAAAAAAAAAAAEAAAAAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Medium-Level\Fish.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BuiltZoo.Birds">
+    <Position X="6.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAACAAAAAABAAAAAAA=</HashCode>
+      <FileName>Classes\Medium-Level\Birds.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BuiltZoo.Tiger">
+    <Position X="3.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEQAAAAAAAEAAAAQAYCAAAAIABAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Low-Level\Tigers.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BuiltZoo.Kangaroo">
+    <Position X="1.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEQAAAAAAAMAAAAQAYCAAAAAABAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Low-Level\Kangaroo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BuiltZoo.Parrot">
+    <Position X="8.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEQAAAAAAAEgAAAQAACAAAAAABAABAAAAAAA=</HashCode>
+      <FileName>Classes\Low-Level\Parrot.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BuiltZoo.Shark">
+    <Position X="7" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAEQAAAAAAAEAEAAQAACAAAAAABAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Low-Level\Shark.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BuiltZoo.ClownFish">
+    <Position X="5.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAEQABAAAAAEAAAAQAACAAAAAABAAAgAAAAAA=</HashCode>
+      <FileName>Classes\Low-Level\ClownFish.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9.75" />
+</ClassDiagram>
