@@ -15,8 +15,15 @@ A zoo contains animals, and animals come in many different shapes and sizes. thi
   ![](./img/poly.png)
 
 
-## An interface is a completely "abstract class", which can only contain abstract methods and properties (with empty bodies).
+**An interface is a completely "abstract class", which can only contain abstract methods and properties (with empty bodies)**
+
 In My Project i have 2 interfaces 
+  ![](./img/inter1.png)
+  
+    ![](./img/inter2.png)
+
+
+
 
 
 
